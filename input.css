@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .modal {
+        @apply 
+        hidden 
+        h-[540px] w-[450px] rounded-md shadow-[0_0_6px_2px_black] bg-modal-color text-slate-200 
+        fixed left-0 top-0 right-0 bottom-0 m-auto
+    }
+    .modal-inner {
+        @apply w-[380px] my-0 mx-auto
+    }
+    .close-modal-btn-container {
+        @apply text-right mx-[12px] my-[6px]
+    }
+    .modal-close-btn {
+        @apply text-[25px] font-bold text-slate-300 
+    }
+    .modal-close-btn:hover, .modal-close-btn:active {
+        @apply text-red-600 cursor-pointer
+    }
+    .modal-close-btn:disabled {
+        @apply text-slate-300 opacity-20 cursor-not-allowed
+    }
+    .modal-text {
+        @apply h-[170px] leading-[30px] mb-0 text-[23px] font-normal
+    }
+    .modal-choice-btn {
+        @apply mt-[10px] py-[8px] px-[16px] flex justify-center
+    }
+    .modal-btn {
+        @apply w-[130px] py-[10px] px-[24px] bg-slate-100 text-black border-solid border-2 border-gray-500 text-[20px]
+    }
+    .modal-inner-loading {
+        @apply text-center
+    }
+    .loading {
+        @apply w-full mt-[10px] pb-10
+    }
+    .idiot-gif {
+        @apply w-11/12 my-0 mx-auto
+    }
+}
