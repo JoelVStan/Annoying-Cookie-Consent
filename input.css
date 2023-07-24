@@ -35,6 +35,9 @@
     .modal-btn {
         @apply w-[130px] py-[10px] px-[24px] bg-slate-100 text-black border-solid border-2 border-gray-500 text-[20px]
     }
+    .modal-btn-reverse {
+        @apply flex-row-reverse
+    }
     .modal-inner-loading {
         @apply text-center
     }
